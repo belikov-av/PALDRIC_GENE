@@ -17,7 +17,7 @@ Pipeline overview
 First, manually convert cohort-level lists of driver genes (or mutations) from third-party algorithms into standard format: 
 HUGO symbol, (Ensembl Transcript ID, mutation), cohort, removing all entries with q-value >0.05. 
 Then, PALDRIC converts these standardized files into patient-level files using TCGA PanCanAtlas SNA and CNA data processed previously via SNADRIF and GECNAV packages.
-You can then choose to analyze these processed outputs of third-party algorithms either individually or in any desirable combinations.
+You can then choose to analyze these processed outputs of third-party algorithms either individually or in any desirable combinations. You can also choose a degree of overlap between algorithms, depending on whether you would like to minimize false negatives or false positives.
 
 Combining these results, PanCanAtlas clinical and demographic data, as well as data on chromosome and chromosomal arm gains and losses processed via ANDRIF package, PALDRIC automatically creates a comprehensive assortment of analyses. They include the number of patients with each integer total number of driver events (0,1,…,99,100) for each cancer type (ACC,…, UVM, PANCAN); the average number of various types of driver events in patients with each integer total number of driver events (1,2,…,99,100); the average number of various types of driver events in each cancer type (ACC,…, UVM, PANCAN); the average number of various types of driver events for each tumor stage (1,2,3,4); the average number of various types of driver events for each age group (<25,25-29,…,≥85). Corresponding multicolor cumulative histograms are plotted.
 
